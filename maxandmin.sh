@@ -5,28 +5,22 @@ d=$((RANDOM%899 +100))
 e=$((RANDOM%899 +100))
 
 echo $a $b $c $d $e
+value=1
 
-if [ $a -gt $b && $a -gt $c && $a -gt $d && $a -gt $e ]
-then
-	echo "Max value is " $a
-fi
+for arg in $a $b $c $d $e
+do
+        if [ $arg -gt $value ]
+        then
+                value=$arg
+        fi
+done
+echo "Maximum value is $value"
 
-if [ b>a && b>c && b>d && b>e ]
-then
-	echo "Max Value is " $b
-fi
-
-if [ c>a && c>b && c>d && c>e ]
-then 
-	echo "Max Value is " $c
-fi
-
-if [ d>a && d>b && d>c && d>e ]
-then
-	echo "Max Value is " $d
-fi
-
-if [ e>a && e>b && e>c && e>d ]
-then
-	echo "Max Value is " $e
-fi
+for arg in $a $b $c $d $e
+do
+        if [ $arg -lt $value ]
+        then
+                value=$arg
+        fi
+done
+echo "Minimum value is $value"
