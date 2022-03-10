@@ -2,34 +2,34 @@ read -p "Enter a digit within 10 to convert it into words: " digit
 
 if [ $digit -eq 1 ]
 then
-	echo "one"
+	echo "One"
 elif [ $digit -eq 2 ]
 then
-	echo two
+	echo Two
 elif [ $digit -eq 3 ]
 then
-	echo three
+	echo Three
 elif [ $digit -eq 4 ]
 then
-	echo four
+	echo Four
 elif [ $digit -eq 5 ]
 then
-	echo five
+	echo Five
 elif [ $digit -eq 6 ]
 then
-	echo six
+	echo Six
 elif [ $digit -eq 7 ]
 then
-	echo seven
+	echo Seven
 elif [ $digit -eq 8 ]
 then
-	echo eight
+	echo Eight
 elif [ $digit -eq 9 ]
 then
-	echo nine
+	echo Nine
 elif [ $digit -eq 0 ]
 then
-	echo zero
+	echo Zero
 else
-	echo enter a digit within 10
+	echo Enter a digit within 10
 fi
